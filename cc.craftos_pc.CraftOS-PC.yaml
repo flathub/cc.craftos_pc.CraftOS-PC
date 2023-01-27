@@ -84,8 +84,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/MCJack123/craftos2.git
-        tag: v2.7.2
-        commit: e4ed6c0527d9983154df9b67d26593f84a4f2edc
+        tag: v2.7.3
+        commit: 98ad73967c026501663393df0f6a65023cdeec95
         x-checker-data:
           type: git
           tag-pattern: "^v([\\d.]+)$"
