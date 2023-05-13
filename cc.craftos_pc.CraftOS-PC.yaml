@@ -84,8 +84,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/MCJack123/craftos2.git
-        tag: v2.7.3
-        commit: 98ad73967c026501663393df0f6a65023cdeec95
+        tag: v2.7.4
+        commit: 3c79f2b1816dd1559f634569640fd4e2ed084993
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -118,8 +118,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/MCJack123/craftos2-rom.git
-        tag: v2.7.3
-        commit: 12e5715b5872491ac0afc36dea98fdb008a6a60b
+        tag: v2.7.4
+        commit: 7e84ee2ace1ae740e2a33a8b6c5e93213a192205
 
         x-checker-data:
           type: git
