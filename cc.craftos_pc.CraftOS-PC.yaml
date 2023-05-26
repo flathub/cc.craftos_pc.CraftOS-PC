@@ -2,7 +2,7 @@ app-id: cc.craftos_pc.CraftOS-PC
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
-command: craftos
+command: start-craftos
 
 cleanup:
   - /include
