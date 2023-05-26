@@ -95,8 +95,9 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D -m 0644 CraftOS-PC.desktop "/app/share/applications/CraftOS-PC.desktop"
-      - desktop-file-edit --set-icon="cc.craftos_pc.CraftOS-PC" --set-key="Exec" --set-value="craftos"
+      - desktop-file-edit --set-icon="cc.craftos_pc.CraftOS-PC" --set-key="Exec" --set-value="start-craftos %F"
         /app/share/applications/CraftOS-PC.desktop
+      - install -D -m 0755 start-craftos /app/bin/start-craftos
       - install -D -m 0644 256.png "/app/share/icons/hicolor/256x256/apps/cc.craftos_pc.CraftOS-PC.png"
       - install -D -m 0644 appdata.xml /app/share/appdata/CraftOS-PC.appdata.xml
       - sed -i 's/cc.craftos-pc.CraftOS-PC/cc.craftos_pc.CraftOS-PC/' /app/share/appdata/CraftOS-PC.appdata.xml
@@ -109,6 +110,8 @@ modules:
         sha256: 499510b2db3bffd6d389424e6a50b7b9156854525879697404f5efb0d8e74e0d
       - type: patch
         path: appstream.patch
+      - type: file
+        path: start-craftos
 
   - name: craftos2-rom
     buildsystem: simple
